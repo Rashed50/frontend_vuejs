@@ -1,0 +1,68 @@
+@import './base.css';
+
+#app {
+  max-width: auto;
+  height: auto;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    display: flex;
+    /* place-items: center; */
+    width: auto;
+    width: 100%;
+  }
+
+  #app {
+    max-width: auto;
+    height: auto;
+    margin: 0 auto;
+    /* padding: 2rem; */
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  #app {
+    max-width: auto;
+    height: auto;
+    margin: 0 auto;
+    /* padding: 2rem; */
+    font-weight: normal;
+  }
+}
+
+@media(max-width: 768px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  #app {
+    max-width: auto;
+    height: auto;
+    margin: 0 auto;
+    /* padding: 2rem; */
+    font-weight: normal;
+  }
+}
