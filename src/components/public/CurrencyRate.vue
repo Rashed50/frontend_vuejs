@@ -94,7 +94,7 @@
 
 <script>
     import axios from 'axios'
-
+    const baseURL = import.meta.env.VITE_API_BASE_URL
     export default{  
         data(){
            return {
@@ -106,8 +106,11 @@
             this.getTodayCurrencyRateAPIRecords()
         },
         methods:{
+            
             async getTodayCurrencyRateAPIRecords(){
-                axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
+               const url = baseURL.concat('currentprice.json')
+                debugger
+                axios.get(url)
                 .then(response => (
                     this.records = response.data.bpi,
                     this.records_loading = false,
